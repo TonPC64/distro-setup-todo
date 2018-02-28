@@ -1,5 +1,11 @@
 # Distro Setup Todo
 
+* [Utilities](#utilities)
+* [GO](#go)
+* [ZSH setup](#zsh-setup)
+* [File .zshrc](#file-zshrc)
+* [VS CODE](#vs-code)
+
 ## Utilities
 
 ```bash
@@ -20,8 +26,10 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 sudo apt-get update
 
 #install all
-sudo apt-get install -y git flatabulous-theme ultra-flat-icons nodejs code
+sudo apt-get install -y git flatabulous-theme ultra-flat-icons nodejs code docky
 ```
+
+[^ Top](#distro-setup-todo)
 
 ---
 
@@ -33,6 +41,8 @@ sudo tar -xvf go1.9.4.linux-amd64.tar.gz
 sudo mv go /usr/local
 rm -rf go go1.9.4.linux-amd64.tar.gz
 ```
+
+[^ Top](#distro-setup-todo)
 
 ---
 
@@ -73,11 +83,13 @@ export PATH=$PATH:$LGOBIN:$GOPATH:$GOROOT/bin
 export GO15VENDOREXPERIMENT=1
 ```
 
+[^ Top](#distro-setup-todo)
+
 ---
 
 ## VS CODE
 
-### setting
+### Setting
 
 ```json
 {
@@ -101,7 +113,7 @@ export GO15VENDOREXPERIMENT=1
 }
 ```
 
-### VS CODE EXTENTIONS
+### Extentions
 
 * Bracket Pair Colorizer
 * ESLint
@@ -113,3 +125,9 @@ export GO15VENDOREXPERIMENT=1
 * Material Icon Theme
 * Go
 * Copy Relative Path
+
+[^ Top](#distro-setup-todo)
+
+---
+
+for linux user like me.
