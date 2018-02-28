@@ -25,8 +25,13 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 # update
 sudo apt-get update
 
-#install all
-sudo apt-get install -y git flatabulous-theme ultra-flat-icons nodejs code docky
+# install all
+sudo apt-get install -y git python3.6 python3-pip snapd flatabulous-theme ultra-flat-icons nodejs code docky
+pip install --upgrade pip
+pip install awscli --upgrade --user
+# snap
+snap install mailspring spotify slack
+
 ```
 
 [^ Top](#distro-setup-todo)
