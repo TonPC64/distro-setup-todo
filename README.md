@@ -55,6 +55,7 @@ rm -rf go go1.9.4.linux-amd64.tar.gz
 
 ```bash
 # install zsh & oh-my-zsh
+sudo apt-get install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # install powerline fonts
