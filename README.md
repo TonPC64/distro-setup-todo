@@ -11,6 +11,10 @@
 ```bash
 
 # add repo
+#chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+
 ## themes & icons
 sudo add-apt-repository ppa:noobslab/themes
 sudo add-apt-repository ppa:noobslab/icons
@@ -26,7 +30,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 sudo apt-get update
 
 # install all
-sudo apt-get install -y git python3.6 python3-pip snapd flatabulous-theme ultra-flat-icons nodejs code docky
+sudo apt-get install -y git python3.6 python3-pip snapd flatabulous-theme ultra-flat-icons nodejs code docky google-chrome-stable
 pip install --upgrade pip
 pip install awscli --upgrade --user
 # snap
