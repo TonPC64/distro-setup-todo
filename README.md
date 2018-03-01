@@ -31,8 +31,8 @@ sudo apt-get update
 
 # install all
 sudo apt-get install -y git python3 python3-pip snapd flatabulous-theme ultra-flat-icons nodejs code docky google-chrome-stable
-pip install --upgrade pip
-pip install awscli --upgrade --user
+pip3 install --upgrade pip
+pip3 install awscli --upgrade --user
 # snap
 snap install mailspring spotify slack
 snap install spotify
