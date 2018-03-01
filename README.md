@@ -34,9 +34,9 @@ sudo apt-get install -y git python3 python3-pip snapd flatabulous-theme ultra-fl
 pip3 install --upgrade pip
 pip3 install awscli --upgrade --user
 # snap
-snap install mailspring spotify slack
+snap install mailspring
 snap install spotify
-snap install slack --classic
+snap install slack
 ```
 
 [^ Top](#distro-setup-todo)
