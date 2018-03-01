@@ -35,7 +35,8 @@ pip install --upgrade pip
 pip install awscli --upgrade --user
 # snap
 snap install mailspring spotify slack
-
+snap install spotify
+snap install slack
 ```
 
 [^ Top](#distro-setup-todo)
