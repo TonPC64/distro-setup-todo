@@ -32,7 +32,7 @@ sudo apt-get update
 # install all
 sudo apt-get install -y git python3 python3-pip snapd flatabulous-theme ultra-flat-icons nodejs code plank google-chrome-stable
 pip3 install --upgrade pip
-sudo pip install -U setuptools
+sudo pip3 install -U setuptools
 pip3 install awscli --upgrade --user
 # snap
 snap install mailspring
