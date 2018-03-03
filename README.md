@@ -53,6 +53,20 @@ sudo mv go /usr/local
 rm -rf go go1.9.4.linux-amd64.tar.gz
 ```
 
+### GO DEV TOOLS
+```bash
+# like a nodemon
+go get github.com/liudng/dogo
+
+# vendor
+## dep
+curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+## manul
+go get github.com/kovetskiy/manul
+## glide
+curl https://glide.sh/get | sh
+```
+
 [^ Top](#distro-setup-todo)
 
 ---
