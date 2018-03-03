@@ -1,4 +1,4 @@
-# Distro Setup Todo
+# Distro Setup Todo (mint 18.3)
 
 * [Utilities](#utilities)
 * [GO](#go)
