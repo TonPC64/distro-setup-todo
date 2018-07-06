@@ -14,6 +14,6 @@ rm -rf Cobalt2-iterm;
 # Open up your ZSH preferences at ~/.zshrc and change the theme variable to ZSH_THEME="cobalt2"
 
 # install pluing zsh
-git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions;
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting;
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions ;
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting ;
 # update  at ~/.zshrc "plugins=(zsh-autosuggestions zsh-syntax-highlighting)"

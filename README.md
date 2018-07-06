@@ -5,6 +5,7 @@
 * [ZSH setup](#zsh-setup)
 * [File .zshrc](#file-zshrc)
 * [VS CODE](#vs-code)
+* [GIT ALIAS]()
 
 ## Utilities
 
@@ -161,5 +162,13 @@ export GO15VENDOREXPERIMENT=1
 [^ Top](#distro-setup-todo)
 
 ---
+
+## GIT ALIAS
+```sh
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+```
 
 for linux user like me.
