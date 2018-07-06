@@ -1,19 +1,18 @@
 # Distro Setup Todo
 
-* [Utilities](#utilities)
-* [GO](#go)
-* [ZSH setup](#zsh-setup)
-* [File .zshrc](#file-zshrc)
-* [VS CODE](#vs-code)
-* [GIT ALIAS]()
+- [Utilities](#utilities)
+- [GO](#go)
+- [ZSH setup](#zsh-setup)
+- [File .zshrc](#file-zshrc)
+- [VS CODE](#vs-code)
+- [GIT ALIAS](#git-alias)
 
 ## Utilities
 
 ```bash
-
 # add repo
 #chrome
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
 
 ## themes & icons
@@ -55,6 +54,7 @@ rm -rf go go1.9.4.linux-amd64.tar.gz
 ```
 
 ### GO DEV TOOLS
+
 ```bash
 # like a nodemon
 go get github.com/liudng/dogo
@@ -73,12 +73,15 @@ curl https://glide.sh/get | sh
 ---
 
 ## ZSH setup
+
 > run script
+
 ```sh
-bash <(curl -Ls https://raw.githubusercontent.com/TonPC64/distro-setup-todo/master/zshinstaller.sh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/TonPC64/distro-setup-todo/master/zshinstaller.sh)";
 ```
 
 > or manual
+
 ```bash
 # install zsh & oh-my-zsh
 sudo apt-get install zsh;
@@ -105,15 +108,18 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ```bash
 alias zshconfig="code ~/.zshrc"
+alias ohmyzsh="code ~/.oh-my-zsh"
 alias sourcezsh="source ~/.zshrc"
 alias open="xdg-open"
+alias cls="clear"
+alias allupdate="sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y;"
 
-export GOROOT=/usr/local/go
+export GOROOT=$HOME/bin/go1.10
+export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/go
 export LGOBIN=$GOPATH/bin
-export GOWORK=$GOPATH/src
+
 export PATH=$PATH:$LGOBIN:$GOPATH:$GOROOT/bin
-export GO15VENDOREXPERIMENT=1
 ```
 
 [^ Top](#distro-setup-todo)
@@ -124,51 +130,23 @@ export GO15VENDOREXPERIMENT=1
 
 ### Setting
 
-```json
-{
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.fontFamily": "Roboto Mono Light for Powerline",
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "vue"
-    ],
-    "emmet.includeLanguages": {
-        "vue-html":"html",
-        "vue":"html"
-    },
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "git.confirmSync": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "JetJet-Alternate-Gray"
-}
+> > view **vscode-setting.json** file in repo
+
+### Extension
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/TonPC64/distro-setup-todo/master/vscode-extension.sh)";
 ```
 
-### Extentions
-
-* Bracket Pair Colorizer
-* ESLint
-* JetJet-theme
-* Vetur
-* Vue peek
-* Path Intellisense
-* Npm Intellisense
-* Material Icon Theme
-* Go
-* Copy Relative Path
-
-[^ Top](#distro-setup-todo)
-
----
-
 ## GIT ALIAS
+
 ```sh
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
 ```
+
+[^ Top](#distro-setup-todo)
 
 for linux user like me.
